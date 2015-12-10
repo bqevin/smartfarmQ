@@ -1,4 +1,6 @@
 <?php
+
+//Fetches the products type
       include('connect.php');
             //sanitize post value
       $page_number = filter_var($_POST["page"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
@@ -12,7 +14,7 @@
       //get current starting point of records
       $position = ($page_number * 8);
 
-      $qry = "SELECT * FROM products ORDER BY type_id DESC LIMIT $position, $item_per_page";
+      $qry = "SELECT * FROM products ORDER BY amount DESC LIMIT $position, $item_per_page";
       $retval = mysql_query($qry,$link);
       if(!$retval)
       {

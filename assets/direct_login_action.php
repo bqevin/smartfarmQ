@@ -12,6 +12,8 @@ if(mysql_num_rows($qry)>0)
 	$_SESSION['email'] = $row['email'];
 	$_SESSION['pnumber'] = $row['pnumber'];
 	$_SESSION['type'] = $row['type'];
+	$_SESSION['county'] = $row['county'];
+	$_SESSION['village'] = $row['village'];
 	header("Location:../profile.php");
 }
 else

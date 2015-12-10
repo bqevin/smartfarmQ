@@ -311,8 +311,12 @@ input:focus ~ .highlight {
 			    <label>County</label>
 			  </div>
 			  <div class="group">
-			    <input type="text"name="village"><span class="highlight"></span><span class="bar"></span>
-			    <label>Residence District</label>
+			    <div class="mdl-selectfield">
+			        <label>Residence District</label>
+			        <select class="browser-default" name="village">
+			        <?php include "templates/districts.php";?>
+			        </select>
+			      </div>
 			  </div>
 			  <div class="group">
 			  	<!-- Standard Select -->
@@ -320,9 +324,9 @@ input:focus ~ .highlight {
 		        <label>Standard Select</label>
 		        <select class="browser-default" name="type">
 		          <option value="" disabled selected>Choose who to register as</option>
-		         <option value="buyer">Buyer</option>
-						<option value="supplier">Supplier</option>
-						<option value="transporter">Transporter</option>
+		         <option value="Buyer">Buyer</option>
+						<option value="Supplier">Supplier</option>
+						<option value="Transporter">Transporter</option>
 		        </select>
 		      </div>
 		    </div>

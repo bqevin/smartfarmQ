@@ -21,12 +21,13 @@ if(isset($_POST['sumit']))
 	 $lname = $_SESSION['lname'];
 	 $email = $_SESSION['email'];
 	 $pnumber = $_SESSION['pnumber'];
+   $village = $_SESSION['village'];
 	 
 	 
   }
   
   
-  $insert = "INSERT INTO products(type,price,amount,description,fname,lname,email,pnumber,photo)VALUES('$type','$price','$amount','$description','$fname','$lname','$email','$pnumber','$image')";
+  $insert = "INSERT INTO products(village,type,price,amount,description,fname,lname,email,pnumber,photo)VALUES('$village','$type','$price','$amount','$description','$fname','$lname','$email','$pnumber','$image')";
   if(!mysql_query($insert))
   {
   die('Error:'.mysql_error());
@@ -36,4 +37,4 @@ if(isset($_POST['sumit']))
   header("Location:../profile.php?msg=2");
   }
 }
-  ?>
+?>

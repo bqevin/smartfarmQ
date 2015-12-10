@@ -45,7 +45,7 @@
         </footer>
       </div>
     </div>
-    <a href="#" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Get Mob App</a>
+    <a href="#" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast" style="background: rgb(112, 177, 31) !important;">Get Mob App</a>
     <script src="js/material.min.js"></script>
 
 
